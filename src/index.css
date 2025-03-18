@@ -1,0 +1,15 @@
+@import "tailwindcss";
+.videoplayer{
+    height: 620px;
+}
+.vd{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(255, 244, 244);
+}
+.ab{
+    text-align: center;
+}
