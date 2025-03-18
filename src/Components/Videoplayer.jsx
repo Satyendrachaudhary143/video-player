@@ -205,9 +205,9 @@ const [mute, setMute] = useState(false)
        </div>
           <div>{getDuration(currentTime)}/{getDuration(duration) }</div>
 
-          <div className="flex gap-4">
-            <button className="cursor-pointer" onChange={soundIncreaseDecrease}>
-              <input type="range" name="" id=""  className="cursor-pointer bg-white" min={0} max={100} value={volume} onChange={e=>setVolume(e.target.value)} step={0.1}/>
+          <div className="flex gap-3">
+            <button className="cursor-pointer " onChange={soundIncreaseDecrease}>
+              <input type="range" name="" id=""  className="cursor-pointer bg-blue-900 w-[50px]" min={0} max={100} value={volume} onChange={e=>setVolume(e.target.value)} step={0.1}/>
             </button>
             <button className="cursor-pointer" onClick={muteUnmute}>
               {mute ? <FaVolumeMute   /> : <HiSpeakerWave  />}
@@ -222,7 +222,7 @@ const [mute, setMute] = useState(false)
        </div>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-2">
+      <div className="flex items-center justify-center mt-2 ">
         <input type="file" name="" id="" className="w-full h-[35px] bg-blue-400" onChange={srcDynmic} accept="video/*" ref={filesrc}/>
       </div>
     </div>
